@@ -3,12 +3,968 @@
 <!--
   THIS CODE IS PROPERTY OF ETHAN STOCKTON
   -->
-<body>
+<head>
+	<title>Ethan Stockton</title>
+	<link rel="icon" href="images/EthanStudiosLogo2.ico">
+	<link href="style.css" rel="stylesheet" type="text/css">
+
+	<style>
+		
+    .test1 {
+    background: rgba(211, 60, 60,0);
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    }
+
+    .test2 {
+      position: fixed;
+      background: rgba(211, 60, 60,0);
+      color: rgb(255, 255, 255);
+      padding: 10px 5px; 
+      font-family: acostaregular; 
+      font-size: 15px; 
+      font-weight: bold; 
+      letter-spacing: 0.7px; 
+      line-height: 1em;
+      cursor: pointer; 
+      z-index: 99999;
+      top: 70%; 
+      left: -100%;
+
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px; 
+      transform: rotate(0deg) translateX(0px) translateY(-100%); transform-origin: 100% 0px;
+
+      transition: 2s;
+
+      opacity: 0;
+    }
+   
+    @media screen {
+			.image1 {
+				max-width: 90vw;
+				max-height: 90vh;
+			}
+    }
 	
+	@font-face {
+    font-family: 'acostaregular';
+    src: url('acosta-webfont.woff2') format('woff2'),
+         url('acosta-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 0px;
+}
+
+.column2 {
+  flex: 50%;
+  padding: 2px;
+}
+
+.column3 {
+  flex: 33%;
+  padding: 2px;
+}
+
+.column4 {
+  flex: 25%;
+  padding: 2px;
+}
+.imageContainerinv {
+   
+   opacity: 0;
+   position: relative;
+   text-align: center;
+   display: flex;
+   padding: 0px;
+}
+
+.imageContainer {
+   
+  
+   position: relative;
+   text-align: center;
+   display: flex;
+   padding: 0px;
+}
+
+.caption{
+   font-size: 25px;
+   font-weight: bolder;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.caption2{
+   font-size: 15px;
+   font-weight: bolder;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.center4 {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-family:'acostaregular';
+   color:rgba(0, 255, 255, 1);
+    width: 90%;
+   font-size:2vw;
+   line-height: 1.4em;
+   text-align: center;
+	
+}
+
+.center {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-family:'acostaregular';
+   color:rgba(0, 255, 255, 1);
+    width: 90%;
+   font-size:5vw;
+   
+   text-align: center;
+	
+}
+.center2 {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-family:'acostaregular';
+   color:rgba(0, 255, 255, 1);
+    width: 90%;
+   font-size:4vw;
+   line-height: 1.4em;
+   text-align: center;
+	
+}
+
+.center3 {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -85%);
+   font-family:'acostaregular';
+   color:rgba(0, 255, 255, 1);
+    width: 40%;
+	height: 40%;
+   
+	
+}
+
+.titlecenter {
+   
+   display: inline-block;
+   position: relative;
+   text-align: center;
+   
+   font-family:'acostaregular';
+   color:rgba(0, 255, 255, 1);
+   width: 100%;
+   font-size:5vw;
+   
+}
+
+.titlecenter2 {
+   
+   display: inline-block;
+   position: relative;
+   text-align: center;
+   
+   font-family:'acostaregular';
+   color:rgba(0, 255, 255, 1);
+   width: 100%;
+   font-size:3vw;
+   
+}
+
+	</style>
+
+</head>
+<!--
+  THIS CODE IS PROPERTY OF ETHAN STOCKTON
+  -->
+<body id="body" class="overlay">
+
+
+	<div id="header">
+		 <!--<img src="images/ethanstudios.png" width="300" height="100"> -->
+		
+		<p class="titlecenter">Ethans Tank Game</p>
+      
+
+      <div style="clear:both"></div>
+
+    </div>  
+
+    <div id="header2" <p 
+style= "background-color:rgba(255, 255, 255, 0.0); ">
+      <p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center"></p>  
+	  
+		
+		</a>
+			
+			
+		<div class="row">
+			<div class="column">
+				<a href="http://tankgame.ethanstockton.com/tanks.html">
+					<img src="images/map0.png"  style="width:100%"></img>
+				
+				</a>
+				
+			</div>
+			<div class="column">
+				<a href="http://tankgame.ethanstockton.com/tanks.html">
+					
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div class="caption center">Join Game</div>
+					</div>
+
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div id="NumOfPlayers" class="caption center2">0 Players Online</div>
+					</div>
+				</a>
+				
+			</div>
+			
+			
+			
+		</div>
+			
+			<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">(When joining the game it will use around 30MB of download)</p> 
+			<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">(The game requires a non https connection to connect to the game server, therefore the website must be http)</p> 
+			<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">(Also sound does not work well for the website version, so it is recommended to keep it turned off)</p> 
+		<br>
+		<br>
+
+
+		<br>
+		<br>
+		
+		
+		<div class="titlecenter">
+		<a href="https://www.kickstarter.com/projects/ethanstockton/ethans-tank-game-demo-available">
+				<img src="images/ui3.png" style="width:100%">
+				
+				<div class="caption center2"><p class="titlecenter2">Check Out The KickStarter Page By Clicking Here</p></div>
+			</a>
+		</div>
+		
+		
+		
+		<br>
+		<br>
+		
+		<div class="titlecenter">
+			<img src="images/ui3/skid1.png" style="width:60%">
+			
+		</div>
+		
+		<div class="titlecenter">
+			<img src="images/ui2.png" style="width:30%">
+			<div class="caption center2"><p class="titlecenter2">What Is It</p></div>
+		</div>
+		
+		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">Ethan's Tank Game is a multiplayer tank game with 80's retro styling, It is a solo indie developed project</p> 
+		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">with a currently expanding collection of interesting maps and gamemodes to explore and play</p>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<div class="titlecenter">
+			<img src="images/ui2.png" style="width:40%">
+			<div class="caption center2"><p class="titlecenter2">Free vs Paid</p></div>
+		</div>
+		<br>
+		
+		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">To allow more people to play there are 2 ways to play</p> 
+		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center"></p>
+		<br>
+		
+		
+		<div class="row">
+			<div class="column3">
+				<a>
+					<div class="imageContainerinv">
+						<img src="images/ui2.png" style="width:100%">
+						<div  class="caption center2"></div> 
+					</div>
+					
+					
+
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div  class="caption2 center4">Access to all maps and gamemodes</div>
+					</div>
+					
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div  class="caption2 center4">Priority in the queue for a game</div>
+					</div>
+					
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div  class="caption2 center4">Account creation</div>
+					</div>
+					
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div  class="caption2 center4">Custom player name</div>
+					</div>
+					
+					
+				</a>
+				
+			</div>
+			<div class="column3">
+				
+				<a>
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div  class="caption center2">Free</div>
+					</div>
+					
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div  class="center3"><img src="images/ui3/tick.png" style="width:50%" style="height:50%"></div>
+					</div>
+					
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div  class="center3"><img src="images/ui3/cross.png" style="width:50%" style="height:50%"></div>
+					</div>
+					
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div  class="center3"><img src="images/ui3/cross.png" style="width:50%" style="height:50%"></div>
+					</div>
+					
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div  class="center3"><img src="images/ui3/cross.png" style="width:50%" style="height:50%"></div>
+					</div>
+					
+				</a>
+			</div>
+			<div class="column3">
+				
+				<a>
+				
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div class="caption center2">Paid</div>
+					</div>
+					
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div  class="center3"><img src="images/ui3/tick.png" style="width:50%" style="height:50%"></div>
+					</div>
+					
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div  class="center3"><img src="images/ui3/tick.png" style="width:50%" style="height:50%"></div>
+					</div>
+					
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div  class="center3"><img src="images/ui3/tick.png" style="width:50%" style="height:50%"></div>
+					</div>
+					
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div  class="center3"><img src="images/ui3/tick.png" style="width:50%" style="height:50%"></div>
+					</div>
+
+				</a>
+			</div>
+		</div>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		
+		
+					
+		<div class="titlecenter">
+			<img src="images/ui2.png" style="width:60%">
+			<div class="caption center2"><p class="titlecenter">GameModes</p></div>
+		</div>
+				
+
+		<div class="row">
+			<div class="column2">
+				<a>
+					
+					<div class="imageContainer">
+						<img src="images/ui3/free.png" style="width:100%">
+						
+					</div>
+
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div id="NumOfPlayers" class="caption center2">Free For All</div>
+					</div>
+					
+					<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">Free for all, is a gamemode with no teams, every tank is on its own battling for victory.</p> 
+				</a>
+				
+			</div>
+			<div class="column2">
+				
+				<a>
+					
+					<div class="imageContainer">
+						<img src="images/ui3/ctf.png" style="width:100%">
+						
+					</div>
+
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div id="NumOfPlayers" class="caption center2">Capture The Flag</div>
+					</div>
+					
+					<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">Capture the flag, 2 teams attempt to claim the others flag for points in the battle, with the team that captures the other teams flag the most being the winning team.</p> 
+				</a>
+			</div>
+		</div>
+		
+		<br>
+		<br>
+		
+		<div class="row">
+			<div class="column2">
+				<a>
+					
+					<div class="imageContainer">
+						<img src="images/ui3/ctp.png" style="width:100%">
+						
+					</div>
+
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div id="NumOfPlayers" class="caption center2">Capture The Power</div>
+					</div>
+					
+					<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">Capture the power, (capture the points), where each team scores points based on the amount of power they have collected, the power points to be captured are positioned around the maps it is up to a team to capture and then defend their claimed points from other teams. The team also needs enough power for their dead players to respawn.</p> 
+				</a>
+				
+			</div>
+			<div class="column2">
+				
+				<a>
+					
+					<div class="imageContainer">
+						<img src="images/ui3/tdm.png" style="width:100%">
+						
+					</div>
+
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div id="NumOfPlayers" class="caption center2">Team Death Match</div>
+					</div>
+					
+					<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">Team DeathMatch, teams attempt to eliminate the other teams each round ,with 3 rounds each game the winning team is the one with the most rounds won over the other teams.</p> 
+				</a>
+			</div>
+		</div>
+		
+		<br>
+		<br>
+		
+		<div class="row">
+			<div class="column2">
+				<a>
+					
+					<div class="imageContainer">
+						<img src="images/ui3/rw.png" style="width:100%">
+						
+					</div>
+
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div id="NumOfPlayers" class="caption center2">Respawn Wars</div>
+					</div>
+					
+					<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">Respawn Wars, (inspired by bedwars/eggwars), is overall similar to Capture the power, however it is more difficult as power must manually be collected and returned to the respawner,  in addition the tank shields do not work in the same way as they do in the rest of the game, in this gamemode the player gets to decide out of the power they have collected, how much they want to put into their own shields, or into the teams respawner.</p> 
+				</a>
+				
+			</div>
+			<div class="column2">
+				
+				
+			</div>
+		</div>
+		
+		
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<div class="titlecenter">
+			<img src="images/ui3.png" style="width:55%">
+			<div class="caption center2"><p class="titlecenter2">Tank Customisation</p></div></img>
+		</div>
+		
+		<br>
+		<br>
+		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">The Tanks have a number of different configurations to choose from.</p> 
+		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">One of the ways this is accomplished is through different levels of shield</p>
+		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">where no shield/or a low power shield will give the player the most speed and acceleration, but it will also take less damage to destroy the tank.</p>
+		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">Where as a mid to high power shield will give the player the most shielding against damage at the expense of speed and acceleration.</p>
+		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">(when in the Respawn Wars GameMode the shield works differently)</p>
+		
+		<div class="row">
+			<div class="column">
+				<img src="images/ui3/shield off.png"  style="width:40%"></img>
+			</div>
+			<div class="column">
+				<img src="images/ui3/shield.png" style="width:40%"></img>
+			</div>
+		</div>
+		
+		
+		
+		<br>
+		
+		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">Another customisable aspect is the tank weapon.</p>
+		
+		
+		<br>
+		
+		<div class="row">
+			<div class="column4">
+				<a>
+					
+					<div class="imageContainer">
+						<img src="images/ui3/weap norm.png" style="width:100%">
+						
+					</div>
+
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div class="caption center2">Normal</div>
+					</div>
+					
+					<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">A laser beam that upon hitting the target damages the tank.</p> 
+				</a>
+				
+			</div>
+			<div class="column4">
+				
+				<a>
+					
+					<div class="imageContainer">
+						<img src="images/ui3/weap rapid.png" style="width:100%">
+						
+					</div>
+
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div class="caption center2">Rapid</div>
+					</div>
+					
+					<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">A faster reloading laser beam that operates the same as the Normal weapon  but has slightly less damage, although this is offset by the faster reload times.</p> 
+				</a>
+			</div>
+			<div class="column4">
+				
+				<a>
+					
+					<div class="imageContainer">
+						<img src="images/ui3/weap fire.png" style="width:100%">
+						
+					</div>
+
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div class="caption center2">Fire</div>
+					</div>
+					
+					<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">A wide spread damage weapon, that damages the enemy tanks, but only works at close ranges.</p> 
+				</a>
+			</div>
+			<div class="column4">
+				
+				<a>
+					
+					<div class="imageContainer">
+						<img src="images/ui3/weap freeze.png" style="width:100%">
+						
+					</div>
+
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div  class="caption center2">Freeze</div>
+					</div>
+					
+					<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">A wide spread damage weapon, that not only damages the enemy tanks, but also slows them down for a temporary amount of time, at the cost of slightly reduced damage, only works at close ranges.</p> 
+				</a>
+			</div>
+		</div>
+
+
+		
+
+		
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<div class="titlecenter">
+			<img src="images/ui2.png" style="width:60%">
+			<div class="caption center2"><p class="titlecenter">MAPS</p></div>
+		</div>
+		
+		<br>
+		
+		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">There are currently 5 maps available to play on the demo, more will be added before the launch of the game.</p>
+		
+			<br>	
+		
+		<div class="row">
+			<div class="column2">
+				<a>
+					
+					<div class="imageContainer">
+						<img src="images/map0.png" style="width:100%">
+						
+					</div>
+
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div id="NumOfPlayers" class="caption center2">Castle Ruins</div>
+					</div>
+					
+					</a>
+				
+			</div>
+			<div class="column2">
+				
+				<a>
+					
+					<div class="imageContainer">
+						<img src="images/map2.png" style="width:100%">
+						
+					</div>
+
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div id="NumOfPlayers" class="caption center2">Fortress Of Destruction</div>
+					</div>
+					
+					</a>
+			</div>
+		</div>
+		
+		
+		<br>
+		<br>
+		<br>
+		
+		<div class="row">
+			<div class="column2">
+				<a>
+					
+					<div class="imageContainer">
+						<img src="images/map3.png" style="width:100%">
+						
+					</div>
+
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div id="NumOfPlayers" class="caption center2">Castles Of Horror</div>
+					</div>
+					
+					</a>
+				
+			</div>
+			<div class="column2">
+				
+				<a>
+					
+					<div class="imageContainer">
+						<img src="images/map4.png" style="width:100%">
+						
+					</div>
+
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div id="NumOfPlayers" class="caption center2">Tunnel Madness</div>
+					</div>
+					
+					</a>
+			</div>
+		</div>
+		
+		<br>
+		<br>
+		<br>
+		
+		<div class="row">
+			<div class="column2">
+				<a>
+					
+					<div class="imageContainer">
+						<img src="images/map5.png" style="width:100%">
+						
+					</div>
+
+					<div class="imageContainer">
+						<img src="images/ui2.png" style="width:100%">
+						<div id="NumOfPlayers" class="caption center2">Mansion Mayhem</div>
+					</div>
+					
+					</a>
+				
+			</div>
+			<div class="column2">
+				
+				
+			</div>
+		</div>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<!--<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">Try out the beta version of the game:</p> 
+<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">Multiplayer available on Web Version and Google Play Store </p>  	  
+<!--
+      <ul id="menu" <style="text-align:center; display: inline-block;vertical-align: top;">
+	  <li><a href="http://game.ethanstudios.net"><button class="glow-on-hover" type="button">Web Version</button></a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.ethanstudios.ethanracinggame&hl=en_US"><button class="glow-on-hover" type="button">Google Play Store</button></a></li>
+          <li><a href="https://www.microsoft.com/en-gb/p/ethans-racing-game-beta/9pc2jgzg5gwk?"><button class="glow-on-hover" type="button">Microsoft Store</button></a></li>
+
+      </ul>
+-->
+</p>
+      
+    </div>   
+
+      <p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center">All Rights Reserved (c) Ethan Stockton 2017 - 2023</p>
+
+    </div>    
+
+
+    
+    <!--
+  THIS CODE IS PROPERTY OF ETHAN STOCKTON
+  -->
 
 <script>
 
-location.href =  href="https://tanks.ethanstockton.com/";
+
+
+		
+function getPlayerNumber(xhttp) {
+	let response = xhttp.response;
+	let VersionPlayerCount;
+	let VersionServerCount;
+	let GameVersion = "p592";
+	
+	console.log(response);
+
+                var lines = response.split(/\r?\n|\r|\n/g);
+               // var lines = response.match(/[^\r\n]+/g);
+
+				var currenttype = "";
+                
+				
+				
+				for (i = 0; i < lines.length; i++) {
+				
+				
+				
+					if (lines[i] == "###versions")
+                    {
+                        //set currenttype to ###versions
+                        currenttype = "versions";
+                        
+
+                    }
+                    if (lines[i] == "###regions")
+                    {
+                        //set currenttype to ###regions
+                        currenttype = "regions";
+
+                    }
+                    if (lines[i] == "###gametype2s")
+                    {
+                        //set currenttype to ###gametype2s
+                        currenttype = "gametype2s";
+                    }
+                    if (lines[i] == "###gametypes")
+                    {
+                        //set currenttype to ###gametypes
+                        currenttype = "gametypes";
+                    }
+  
+
+                    
+                    if (currenttype == "versions" && lines[i] != "###versions")
+                    {
+                        let LoadedLine = lines[i].split('');
+
+                        let version = "null";
+                        let num = 0;
+                        let players = 0;
+
+console.log(LoadedLine);
+
+                        let temp = "";
+                        let j = 0;
+                        let index = 0;
+                        for (y = 0; y < LoadedLine.length; y++) 
+                        {
+							let chara = LoadedLine[y];
+                            if (chara == ',')
+                            {
+
+                                if (j == 0)
+                                {
+                                    version = temp;
+									console.log(version);
+                                    temp = "";
+                                }
+                                if (j == 1)
+                                {
+                                    num = temp;
+									console.log(num);
+                                    temp = "";
+
+                                }
+                                if (j == 2)
+                                {//players
+                                    temp = temp + chara;
+                                    players = temp;
+									console.log(players);
+                                    temp = "";
+
+                                }
+                                else
+                                {
+                                    temp = "";
+
+                                }
+                                j++;
+
+
+                            }
+                            else
+                            {
+                                if (temp == null)
+                                {
+                                    temp = chara;
+                                }
+                                else
+                                {
+                                    temp = temp + chara;
+                                }
+
+                            }
+
+                            
+                        }
+						players = temp;
+						console.log(players);
+
+                        if (version == GameVersion)
+                        {
+                            //this is the entry related to this version, so pass the info to the variables
+                            VersionServerCount = num;
+                            VersionPlayerCount = players;
+							
+							document.getElementById("NumOfPlayers").innerHTML = VersionPlayerCount + " Players Online";
+                        }
+                    }
+					
+					
+				}
+				
+				
+				
+				if(VersionServerCount == null){
+				
+					document.getElementById("NumOfPlayers").innerHTML = "No Servers Online";
+				}
+				
+	}
+
+
+//document.getElementById("NumOfPlayers").innerHTML = "2 Players Online";
+
+
+loadDoc('https://listserver.ethanstudios.org/neon10-11-2022/autojoin/public/gameserverlistneonAJ.php', getPlayerNumber);
+
+
+
+function loadDoc(url, cFunction) {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {cFunction(this);}
+  xhttp.open("GET", url);
+  xhttp.send();
+}
+
+
 
 
 </script>
