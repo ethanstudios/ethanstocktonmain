@@ -1,1000 +1,913 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-  THIS CODE IS PROPERTY OF ETHAN STOCKTON
-  -->
+
 <head>
 	<title>Ethan Stockton</title>
-	
+
 	<meta property="og:site_name" content="Ethan Stockton" />
 	<meta property="og:title" content="Ethan Stockton" />
 
-    <meta property="og:description" content="Welcome to my website" />
+	<meta property="og:description" content="Welcome to my website. Where I upload the best of my Photography, and where you can play my Racing Game, Tank Game and Train Game." />
 
-    <meta property="og:type" content="website" />
+	<meta property="og:type" content="website" />
 
-    <meta property="og:image" content="https://ethanstockton.com/images/Version1-(small).jpeg" />
-    <meta property="og:image:secure_url" content="https://ethanstockton.com/images/Version1-(small).jpeg" />
+	<meta property="og:image" content="https://ethanstockton.com/images/EthanStockton-Compressed-Medium-2.png" />
+	<meta property="og:image:secure_url" content="https://ethanstockton.com/images/EthanStockton-Compressed-Medium-2.png" />
 
-    <meta property="og:url" content="https://ethanstockton.com/" />
-	
+	<meta property="og:url" content="https://ethanstockton.com/" />
+
 	<link rel="icon" href="images/EthanStudiosLogo7.ico">
-	<link rel="preload" href="acosta-webfont.woff2" as="font" type="font/woff2" crossorigin>
+	<!--<link rel="preload" href="acosta-webfont.woff2" as="font" type="font/woff2" crossorigin>-->
 	<link rel="preload" href="Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin>
-	<link href="style.css" rel="stylesheet" type="text/css">
-	
-	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">   --> 
-	<!--<meta name="viewport">   -->
-	
-	<meta
-  name="description"
-  content="Ethan Stockton's games development projects, ethans racing game , ethans tank game , ethans train game as well as links to my other accounts">
-  
-<script src="3.7.8_plyr.js"></script>
-<link rel="stylesheet" href="3.7.8_plyr.css" />
+	<link rel="preload" href="Runtoe.woff2" as="font" type="font/woff2" crossorigin>
+	<!--<link href="style.css" rel="stylesheet" type="text/css">-->
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="Ethan Stockton's games development projects, ethans racing game , ethans tank game , ethans train game as well as links to my other accounts">
+
+	<script src="3.7.8_plyr.js"></script>
+	<link rel="stylesheet" href="3.7.8_plyr.css" />
+
+	<link href="bootstrap/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<!--<link href="bootstrap/headers.css" rel="stylesheet">-->
+
+	<script src="bootstrap/assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
 
 	<style>
+	
+		body {
+			background-color: #000000;		
+		}
+
+		.btn-custom , .btn.btn-custom:focus{
+			color: #ffffff;
+			background-color: #000000;
+			border-color: #000000; /*set the color you want here*/
+			transition: 0.0s;
+		}
+		.btn.btn-custom:hover {
+			color: #000000;
+			background-color: #ffffff;
+			border-color: #ffffff; /*set the color you want here*/
+			transition: 0.0s;
+		}
 		
-	@font-face {
-    font-family: 'acostaregular';
-    src: url('acosta-webfont.woff2') format('woff2'),
-         url('acosta-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+		
+		
+/*
+		@font-face {
+			font-family: 'acostaregular';
+			src: url('acosta-webfont.woff2') format('woff2'),
+				url('acosta-webfont.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
 
-}
+		}*/
 
 
-@font-face {
-    font-family: 'RalewayRegular';
-	 font-style:bold;
-    
-    font-display:block;
-    src: url('Raleway-Regular.woff2') format('woff2');
-   
+		@font-face {
+			font-family: 'RalewayRegular';
+			font-weight: normal;
+			font-style: normal;
+			src: url('Raleway-Regular.woff2') format('woff2');
 
-}
 
-    .test1 {
-    background: rgba(211, 60, 60,0);
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
-    }
+		}
 
-    .test2 {
-      position: fixed;
-      background: rgba(211, 60, 60,0);
-      color: rgb(255, 255, 255);
-      padding: 10px 5px; 
-      font-family: acostaregular; 
-      font-size: 15px; 
-      font-weight: bold; 
-      letter-spacing: 0.7px; 
-      line-height: 1em;
-      cursor: pointer; 
-      z-index: 99999;
-      top: 70%; 
-      left: -100%;
+		@font-face {
+			font-family: 'Runtoe';
 
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px; 
-      transform: rotate(0deg) translateX(0px) translateY(-100%); transform-origin: 100% 0px;
+			font-weight: normal;
+			font-style: normal;
+			src: url('Runtoe.woff2') format('woff2');
 
-      transition: 2s;
 
-      opacity: 0;
-    }
-   
-    @media screen {
-			.image1 {
-				max-width: 90vw;
-				max-height: 90vh;
-			}
-    }
-	
+		}
 
-.row {
-  display: flex;
-}
-.column0 {
-  flex: 100%;
-  padding: 0px;
-}
-
-.column {
-  flex: 50%;
-  padding: 0px;
-}
-
-.column2 {
-  flex: 50%;
-  padding: 2px;
-}
-
-.column3 {
-  flex: 33%;
-  padding: 2px;
-}
-
-.column4 {
-  flex: 25%;
-  padding: 2px;
-}
-.imageContainerinv {
-   
-   opacity: 0;
-   position: relative;
-   text-align: center;
-   display: flex;
-   padding: 0px;
-}
-
-.imageContainer {
-   
-  
-   position: relative;
-   text-align: center;
-   display: flex;
-   padding: 0px;
-   
-}
-
-.caption{
-   font-size: 25px;
-   font-weight: bolder;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.caption2{
-   font-size: 15px;
-   font-weight: bolder;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.caption3{
-   font-size: 35px;
-   font-weight: bolder;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.center4 {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   font-family:'acostaregular';
-   color:rgba(0, 255, 255, 1);
-    width: 90%;
-   font-size:2vw;
-   line-height: 1.4em;
-   text-align: center;
-	
-}
-
-.center {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   font-family:'acostaregular';
-   color:rgba(0, 255, 255, 1);
-    width: 90%;
-   font-size:5vw;
-   
-   text-align: center;
-	
-}
-.center2 {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   font-family:'acostaregular';
-   color:rgba(0, 255, 255, 1);
-    width: 90%;
-   font-size:4vw;
-   line-height: 1.4em;
-   text-align: center;
-	
-}
-
-.center3 {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -85%);
-   font-family:'acostaregular';
-   color:rgba(0, 255, 255, 1);
-    width: 40%;
-	height: 40%;
-   
-	
-}
-
-.center4 {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -85%);
-   font-family:'acostaregular';
-   color:rgba(0, 255, 255, 1);
-    width: 95%;
-	height: 30%;
-   
-	
-}
-
-.center5 {
-   position: absolute;
-   top: 40%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   font-family:'acostaregular';
-   color:rgba(0, 255, 255, 1);
-    width: 90%;
-	height: 80%;
-   
-   text-align: center;
-	
-}
-
-.titlecenter {
-   
-   display: inline-block;
-   position: relative;
-   text-align: center;
-   
-   font-family:'acostaregular';
-   color:rgba(0, 255, 255, 1);
-   width: 100%;
-   font-size:3vw;
-   
-}
-
-.titlecenter2 {
-   
-   display: inline-block;
-   position: relative;
-   text-align: center;
-   
-   font-family:'acostaregular';
-   color:rgba(0, 255, 255, 1);
-   width: 100%;
-   font-size:3vw;
-   
-}
-.video-container {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
-  max-width: 100vw;
-  max-height: 100vh;
-}
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  max-width: 100vw;
-  max-height: 100vh;
-}
-
+		.b-example-divider {
+			width: 100%;
+			height: 3rem;
+			background-color: rgba(0, 0, 0, .1);
+			border: solid rgba(0, 0, 0, .15);
+			border-width: 1px 0;
+			box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+		}
+		
 	</style>
 
 </head>
-<!--
-  THIS CODE IS PROPERTY OF ETHAN STOCKTON
-  -->
-<body id="body" class="overlay">
+
+<main>
+
+	<div id="Home"></div>
+
+	<header
+		class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between  border-bottom border-white border-2 mb-0 py-0">
+		<div class="col-md-3 mb-0 mb-md-0 py-0 d-none d-md-block">
+			<a href="" class="d-inline-flex link-body-emphasis">
+				<img class="" width="240" src="images/EthanStockton-Compressed-Small.png">
+			</a>
+		</div>
+
+		<!-- For medium and larger screens -->
+		<ul class="nav col-md-auto mb-0 justify-content-center mb-md-0 py-0">
+
+			<li><a href="" class="btn btn-block btn-custom nav-link px-4 py-0  d-none d-md-block"
+					style="font-family:'Runtoe';font-size:30px;">Home</a></li>
+					
+			<li><a href="#Photos" class="btn btn-block btn-custom nav-link px-4 py-0  d-none d-md-block"
+					style="font-family:'Runtoe';font-size:30px;">Photos</a></li>
+					
+			<li><a href="#Games" class="btn btn-block btn-custom nav-link px-4 py-0  d-none d-md-block"
+					style="font-family:'Runtoe';font-size:30px;">Games</a></li>
+
+			<!-- For smaller screens -->
+
+			<li><a href="" class="btn btn-block btn-custom nav-link px-3 py-0 d-md-none"
+					style="font-family:'Runtoe';font-size:28px;">Home</a></li>
+					
+			<li><a href="#Photos" class="btn btn-block btn-custom nav-link px-3 py-0 d-md-none"
+					style="font-family:'Runtoe';font-size:28px;">Photos</a></li>
+					
+			<li><a href="#Games" class="btn btn-block btn-custom nav-link px-3 py-0 d-md-none"
+					style="font-family:'Runtoe';font-size:28px;">Games</a></li>
+
+		</ul>
 
 
-	<div id="header">
-		 <!--<img src="images/ethanstudios.png" width="300" height="100"> -->
-		
+
+		<div class="col-md-3 text-end mb-0 mb-md-0 py-0">
+
+		</div>
+	</header>
+
+
+</main>
+
+
+<body id="body">
+
+	<div id="header"  style="box-sizing: border-box;text-align: center;top: 0;" class="mx-6 px-0 py-0 my-0 my-md-3 py-md-3 px-md-3">
+		<!--<img src="images/ethanstudios.png" width="300" height="100"> -->
 		<!--<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);width: 100%;font-size:3vw;line-height: 5vw;" >Ethan Stockton's Dev Projects</p>-->
-      <img src="images/EthanStockton.png" style="width:80%;padding: 0px;top: 0;"> 
+		
+		<img src="images/EthanStockton.png" style="width:100%;text-align: center;top: 0;">
 
-      <div style="clear:both"></div>
-
-    </div>  
-
-    <div id="header2" <p 
-style= "background-color:rgba(255, 255, 255, 0.0); ">
-      <p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center"></p>  
-	  
-		
-		
-			
-			
-		<div class="row">
-		
-			<div class="column2">
-				<a style="text-decoration: none" href="https://ethanstudios.net/">
-				
-				<p  style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);width: 100%;font-size:2.8vw;line-height: 0.01vw;">Ethans Racing Game</p>
-				
-				<img src="images/erg1.png"  style="width:100%" alt="An image of my racing game, with cars moving towards the camera"></img>
-					
-				</a>
-				
-				<p  style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);width: 100%;font-size:2vw;line-height: 1vw;text-align: center;">-Single Player (AI Opponents)</p>
-				
-				<p  style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);width: 100%;font-size:2vw;line-height: 1vw;text-align: center;">-Multi Player (Online Servers)</p>
-
-			</div>
-			
-			<div class="column2">
-			
-				<a style="text-decoration: none" href="https://tanks.ethanstockton.com">
-				
-				<p  style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);width: 100%;font-size:2.8vw;line-height: 0.01vw;">Ethans Tank Game</p>
-				
-				<img src="images/etg1.png"  style="width:100%" alt="An image of my tank game, with the tanks fireing their weapons at each other"></></img>
-					
-				</a>
-				
-				<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);width: 100%;font-size:2vw;line-height: 1vw;text-align: center;">-Multi Player (Online Servers)</p>
-
-			</div>
-			
-			
-			
-			
-			
-			
-		</div>
-		
-		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 0);text-align:center;width:100%;font-size:1vw;line-height:0.1em;">
-			<u>
-				 empty space
-			</u>
-		</p>
-		
-		<div class="row">
-		
-			<div class="column2">
-				
-				<a href="https://ethanstudios.net/">
-
-					<div class="imageContainer">
-						<img src="images/ui3.png" style="width:100%" alt="">
-						<div class="center4" style="width:93%;font-size:1.8vw;">Ethans Racing Game Website</div>
-					</div>
-					
-				</a>
-
-			</div>
-			
-			<div class="column2">
-
-				<a href="https://tanks.ethanstockton.com">
-
-					<div class="imageContainer">
-						<img src="images/ui3.png" style="width:100%" alt="">
-						<div class="center4" style="width:90%;font-size:1.8vw;">Ethans Tank Game Website</div>
-					</div>
-					
-				</a>
-
-			</div>
-				
-		</div>
-		
-		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 0);text-align:center;width:100%;font-size:1vw;line-height:0.1em;">
-			<u>
-				 empty space
-			</u>
-		</p>
-		
-		<div class="row">
-		
-			<div class="column2">
-				<div style="clear:both"></div>
-				
-				<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center;width:96%;font-size:1.9vw;line-height: 1.0vw;">
-				<u>
-				Development Information
-				</u>
-				</p>
-				
-				<div style="max-height:100%;height:100%;width:100%;font-size:1.0vw;line-height: 1.0vw;>
-				<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:left;width:90%;font-size:1.4vw;line-height: 1.5vw;"></p>
-				<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:left;width:90%;font-size:1.4vw;line-height: 1.5vw;">Ethan's Racing Game Started in 2018.</p>
-				<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:left;width:90%;font-size:1.4vw;line-height: 1.5vw;">Ethan's Tank Game Started in 2020.</p>
-				<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:left;width:90%;font-size:1.4vw;line-height: 1.5vw;">Ethan's Train Game Started in 2023.</p>
-				
-				<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:left;width:90%;font-size:1.4vw;line-height: 1.5vw;">Developed using the Unity Engine.</p>				
-				<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:left;width:90%;font-size:1.4vw;line-height: 1.5vw;">The main language used is C#.</p>
-				<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:left;width:90%;font-size:1.4vw;line-height: 2.5vw;">The websites use HTML, JavaScript and CSS.</p>
-				<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:left;width:90%;font-size:1.4vw;line-height: 2.5vw;">With the game and website backends using PHP and MariaDB (A fork of MySQL).</p>
-				<p></p>
-				<p></p>
-				
-				</div>
-
-			</div>
-			
-			
-			 <div style="clear:both"></div>
-		
-			<div class="column2">
-				
-
-				
-				<!--
-				<div class="video-container">
-		
-					<iframe style="width:100%" src="https://www.youtube-nocookie.com/embed/4V4b6zFrYr0?playlist=4V4b6zFrYr0&loop=0&autoplay=0&playsinline=1&mute=1&rel=0&color=white&modestbranding=1" title="Ethans Tank Game Trailer" frameborder="0" allow="accelerometer; autoplay;" allowfullscreen></iframe>
-		
-				</div>-->
-				
-				<div hidden="" id="sprite-plyr"><!--?xml version="1.0" encoding="UTF-8"?--><svg>
-<symbol id="plyr-airplay" viewBox="0 0 18 18">
-<path d="M16 1H2a1 1 0 00-1 1v10a1 1 0 001 1h3v-2H3V3h12v8h-2v2h3a1 1 0 001-1V2a1 1 0 00-1-1z">
-</path>
-<path d="M4 17h10l-5-6z"></path></symbol><symbol id="plyr-captions-off" viewBox="0 0 18 18">
-<path d="M1 1c-.6 0-1 .4-1 1v11c0 .6.4 1 1 1h4.6l2.7 2.7c.2.2.4.3.7.3.3 0 .5-.1.7-.3l2.7-2.7H17c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1H1zm4.52 10.15c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41C8.47 4.96 7.46 3.76 5.5 3.76c-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69zm7.57 0c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41c-.28-1.15-1.29-2.35-3.25-2.35-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69z" fill-rule="evenodd" fill-opacity=".5">
-</path>
-</symbol>
-<symbol id="plyr-captions-on" viewBox="0 0 18 18">
-<path d="M1 1c-.6 0-1 .4-1 1v11c0 .6.4 1 1 1h4.6l2.7 2.7c.2.2.4.3.7.3.3 0 .5-.1.7-.3l2.7-2.7H17c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1H1zm4.52 10.15c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41C8.47 4.96 7.46 3.76 5.5 3.76c-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69zm7.57 0c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41c-.28-1.15-1.29-2.35-3.25-2.35-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69z" fill-rule="evenodd">
-</path></symbol>
-<symbol id="plyr-download" viewBox="0 0 18 18">
-<path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z">
-</path>
-</symbol>
-<symbol id="plyr-enter-fullscreen" viewBox="0 0 18 18">
-<path d="M10 3h3.6l-4 4L11 8.4l4-4V8h2V1h-7zM7 9.6l-4 4V10H1v7h7v-2H4.4l4-4z">
-</path></symbol><symbol id="plyr-exit-fullscreen" viewBox="0 0 18 18">
-<path d="M1 12h3.6l-4 4L2 17.4l4-4V17h2v-7H1zM16 .6l-4 4V1h-2v7h7V6h-3.6l4-4z">
-</path>
-</symbol>
-<symbol id="plyr-fast-forward" viewBox="0 0 18 18"><path d="M7.875 7.171L0 1v16l7.875-6.171V17L18 9 7.875 1z"></path>
-</symbol>
-<symbol id="plyr-logo-vimeo" viewBox="0 0 18 18">
-<path d="M17 5.3c-.1 1.6-1.2 3.7-3.3 6.4-2.2 2.8-4 4.2-5.5 4.2-.9 0-1.7-.9-2.4-2.6C5 10.9 4.4 6 3 6c-.1 0-.5.3-1.2.8l-.8-1c.8-.7 3.5-3.4 4.7-3.5 1.2-.1 2 .7 2.3 2.5.3 2 .8 6.1 1.8 6.1.9 0 2.5-3.4 2.6-4 .1-.9-.3-1.9-2.3-1.1.8-2.6 2.3-3.8 4.5-3.8 1.7.1 2.5 1.2 2.4 3.3z">
-</path></symbol>
-<symbol id="plyr-logo-youtube" viewBox="0 0 18 18"><path d="M16.8 5.8c-.2-1.3-.8-2.2-2.2-2.4C12.4 3 9 3 9 3s-3.4 0-5.6.4C2 3.6 1.3 4.5 1.2 5.8 1 7.1 1 9 1 9s0 1.9.2 3.2c.2 1.3.8 2.2 2.2 2.4C5.6 15 9 15 9 15s3.4 0 5.6-.4c1.4-.3 2-1.1 2.2-2.4.2-1.3.2-3.2.2-3.2s0-1.9-.2-3.2zM7 12V6l5 3-5 3z"></path></symbol>
-<symbol id="plyr-muted" viewBox="0 0 18 18"><path d="M12.4 12.5l2.1-2.1 2.1 2.1 1.4-1.4L15.9 9 18 6.9l-1.4-1.4-2.1 2.1-2.1-2.1L11 6.9 13.1 9 11 11.1zM3.786 6.008H.714C.286 6.008 0 6.31 0 6.76v4.512c0 .452.286.752.714.752h3.072l4.071 3.858c.5.3 1.143 0 1.143-.602V2.752c0-.601-.643-.977-1.143-.601L3.786 6.008z"></path></symbol><symbol id="plyr-pause" viewBox="0 0 18 18"><path d="M6 1H3c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h3c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1zm6 0c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h3c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1h-3z"></path></symbol><symbol id="plyr-pip" viewBox="0 0 18 18">
-<path d="M13.293 3.293L7.022 9.564l1.414 1.414 6.271-6.271L17 7V1h-6z"></path><path d="M13 15H3V5h5V3H2a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1v-6h-2v5z"></path>
-</symbol>
-<symbol id="plyr-play" viewBox="0 0 18 18">
-<path d="M15.562 8.1L3.87.225c-.818-.562-1.87 0-1.87.9v15.75c0 .9 1.052 1.462 1.87.9L15.563 9.9c.584-.45.584-1.35 0-1.8z"></path>
-</symbol><symbol id="plyr-restart" viewBox="0 0 18 18">
-<path d="M9.7 1.2l.7 6.4 2.1-2.1c1.9 1.9 1.9 5.1 0 7-.9 1-2.2 1.5-3.5 1.5-1.3 0-2.6-.5-3.5-1.5-1.9-1.9-1.9-5.1 0-7 .6-.6 1.4-1.1 2.3-1.3l-.6-1.9C6 2.6 4.9 3.2 4 4.1 1.3 6.8 1.3 11.2 4 14c1.3 1.3 3.1 2 4.9 2 1.9 0 3.6-.7 4.9-2 2.7-2.7 2.7-7.1 0-9.9L16 1.9l-6.3-.7z"></path></symbol>
-<symbol id="plyr-rewind" viewBox="0 0 18 18"><path d="M10.125 1L0 9l10.125 8v-6.171L18 17V1l-7.875 6.171z"></path></symbol><symbol id="plyr-settings" viewBox="0 0 18 18">
-<path d="M16.135 7.784a2 2 0 01-1.23-2.969c.322-.536.225-.998-.094-1.316l-.31-.31c-.318-.318-.78-.415-1.316-.094a2 2 0 01-2.969-1.23C10.065 1.258 9.669 1 9.219 1h-.438c-.45 0-.845.258-.997.865a2 2 0 01-2.969 1.23c-.536-.322-.999-.225-1.317.093l-.31.31c-.318.318-.415.781-.093 1.317a2 2 0 01-1.23 2.969C1.26 7.935 1 8.33 1 8.781v.438c0 .45.258.845.865.997a2 2 0 011.23 2.969c-.322.536-.225.998.094 1.316l.31.31c.319.319.782.415 1.316.094a2 2 0 012.969 1.23c.151.607.547.865.997.865h.438c.45 0 .845-.258.997-.865a2 2 0 012.969-1.23c.535.321.997.225 1.316-.094l.31-.31c.318-.318.415-.781.094-1.316a2 2 0 011.23-2.969c.607-.151.865-.547.865-.997v-.438c0-.451-.26-.846-.865-.997zM9 12a3 3 0 110-6 3 3 0 010 6z"></path>
-</symbol><symbol id="plyr-volume" viewBox="0 0 18 18"><path d="M15.6 3.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4C15.4 5.9 16 7.4 16 9c0 1.6-.6 3.1-1.8 4.3-.4.4-.4 1 0 1.4.2.2.5.3.7.3.3 0 .5-.1.7-.3C17.1 13.2 18 11.2 18 9s-.9-4.2-2.4-5.7z"></path><path d="M11.282 5.282a.909.909 0 000 1.316c.735.735.995 1.458.995 2.402 0 .936-.425 1.917-.995 2.487a.909.909 0 000 1.316c.145.145.636.262 1.018.156a.725.725 0 00.298-.156C13.773 11.733 14.13 10.16 14.13 9c0-.17-.002-.34-.011-.51-.053-.992-.319-2.005-1.522-3.208a.909.909 0 00-1.316 0zm-7.496.726H.714C.286 6.008 0 6.31 0 6.76v4.512c0 .452.286.752.714.752h3.072l4.071 3.858c.5.3 1.143 0 1.143-.602V2.752c0-.601-.643-.977-1.143-.601L3.786 6.008z"></path></symbol></svg>
-</div>
-
-
-				<div class="video-container" style="width:100%">
-					<!--</div class="plyr plyr--full-ui plyr--video plyr--html5"> -->
-						
-
-						<video poster="images/ui3/skid4.png" id="player" playsinline="true" controls clickToPlay="true" data-poster="images/ui3/skid4.png" style="width:100%;--plyr-color-main: #00cccc;">
-							<source src="https://cdnuk1.ethanstockton.com/TankTrailer5HD-1080p.mp4" type="video/mp4" size="1080">
-							<!-- Captions are optional -->
-						</video>
-
-					<!--</div> -->
-				</div>
-		
-			</div>
-			
-			
-			
-			
-			
-			
-		</div>
-		
-		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 0);text-align:center;width:100%;font-size:3vw;line-height:0.1em;">
-			<u>
-				 empty space
-			</u>
-		</p>
-		
-		
-		
-		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center;width:100%;font-size:3vw;line-height:0.1vw;white-space: nowrap;">
-			<u>
-				Released Platforms
-			</u>
-		</p>
-		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center;width:100%;font-size:1vw;line-height: 0.1vw;white-space: nowrap;">
-			Click the buttons to go to the release website
-		</p>
-		
-		<div class="row">
-		
-			<div class="column2">
-			
-				
-				<p  style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);width: 100%;font-size:2vw;line-height: 0.1vw;">Ethans Racing Game</p>
-				
-
-				<a href="http://game.ethanstockton.net/">
-
-					<div class="imageContainer">
-						<img src="images/ui3.png" style="width:100%" alt="">
-						<div class="center5" style="width:93%;font-size:3vw;line-height: 0.2em;">
-						<p>WebGL</p>
-						<p style="font-size:1.8vw;">(Desktop WebSite)(Full Game)</p>
-						
-						 </div>
-					</div>
-					
-				</a>
-				<a href="https://play.google.com/store/apps/details?id=com.ethanstudios.ethanracinggame&hl=en_US">
-
-					<div class="imageContainer">
-						<img src="images/ui3.png" style="width:100%" alt="">
-						<div class="center5" style="width:93%;font-size:3vw;line-height: 0.2em;">
-						<p>Google Play</p>
-						<p style="font-size:1.8vw;">(Mobile Android APK) (Full Game)</p>
-						 </div>
-					</div>
-					
-				</a>
-				<a href="https://www.microsoft.com/en-gb/p/ethans-racing-game-beta/9pc2jgzg5gwk?">
-
-					<div class="imageContainer">
-						<img src="images/ui3.png" style="width:100%" alt="">
-						<div class="center5" style="width:93%;font-size:3vw;line-height: 0.2em;">
-						<p>Microsoft Store</p>
-						<p style="font-size:1.8vw;">(Desktop)(Single Player Only)</p>
-						
-						 </div>
-					</div>
-					
-				</a>
-				
-				
-
-			</div>
-			
-			
-			
-		
-			<div class="column2">
-					
-				<p  style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);width: 100%;font-size:2vw;line-height: 0.1vw;">Ethans Tank Game</p>
-			
-
-				<a href="http://tankgame.ethanstockton.net/">
-
-					<div class="imageContainer">
-						<img src="images/ui3.png" style="width:100%" alt="">
-						<div class="center5" style="width:93%;font-size:3vw;line-height: 0.2em;">
-						
-						<p>WebGL</p>
-						<p style="font-size:1.8vw;">(Desktop WebSite)(Full Game)</p>
-						
-						</div>
-						
-					</div>
-					
-				</a>
-				
-				
-				
-				
-		
-			</div>
-			
-			
-			
-			
-			
-			
-		</div>
-		
-
-		<!-- Empty Space 
-		<div>
-		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 0);text-align:center;width:100%;font-size:1vw;line-height:40em;">
-			<u>
-				 empty space
-			</u>
-		</p>
-		
-		</div>
-		-->
-		<!--
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		-->
-		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 0);text-align:center;width:100%;font-size:3vw;line-height:1.1em;">
-			<u>
-				 empty space
-			</u>
-		</p>
-		
-		
-		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center;width:100%;font-size:3vw;line-height:0.1vw;white-space: nowrap;">
-			<u>
-				Currently Under Development
-			</u>
-		</p>
-		<!--<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center;width:100%;font-size:1vw;line-height: 0.1vw;">
-			
-		</p>-->
 		<div style="clear:both"></div>
 
-    
-
-		<div id="header2" <p 
-		style= "background-color:rgba(255, 255, 255, 0.0); ">
-		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center"></p>  
+	</div>
+	
+	
+	
+	
+	<div class="row text-end mb-0 mb-lg-0 py-0">
+		<div class="col-lg-6 px-1 py-1 my-1 my-lg-3 py-lg-4 px-lg-2 text-center bg-black text-white">
+			<p class="lead mb-1" style="font-family:'RalewayRegular';font-weight: 400;font-size:35px;color:rgba(255, 255, 255, 1)">
+			Welcome to my website.
+			</p>
+			<p class="lead mb-1" style="font-family:'RalewayRegular';font-weight: 400;font-size:25px;color:rgba(255, 255, 255, 1)">
+			Where I upload the best of my Photography,
+			</p>
+			<p class="lead mb-1" style="font-family:'RalewayRegular';font-weight: 400;font-size:25px;color:rgba(255, 255, 255, 1)">
+			and where you can play my Racing Game, Tank Game and Train Game.
+			</p>
+			<p class="lead mb-1" style="font-family:'RalewayRegular';font-weight: 400;font-size:25px;color:rgba(255, 255, 255, 1)">
+			With more projects coming in the future.
+			</p>
+			
+		</div>
 		
-		<div class="row">
-		
-			<div class="column2">
-				<a style="text-decoration: none" href="https://trains.ethanstockton.com">
-				
-				<p  style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);width: 100%;font-size:2.8vw;line-height: 0.01vw;">Ethans Train Game</p>
-				
-				<img src="images/TrainGameTestValleyStill-Green.png"  style="width:100%" alt="An image of my train game, with the train passing the camera while traveling through a valley"></img>
-					
-				</a>
-				
-				<p  style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);width: 100%;font-size:1.7vw;line-height: 1.5vw;text-align: center;">-Prototype Demo Now Available</p>
-			
-			</div>
-			
-			<div class="column2">
-				<a style="text-decoration: none" href="https://photos.ethanstockton.com">
-				
-				<p  style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);width: 100%;font-size:2.8vw;line-height: 0.01vw;">Ethans Photo Gallery</p>
-				
-				<img src="images/photos/IMG_20240830_123511224_HDR.jpg"  style="width:100%" alt=""></img>
-					
-				</a>
-				
-				<p  style="font-family:'RalewayRegular';font-weight:bold;color:rgba(0, 255, 255, 1);width: 100%;font-size:1.7vw;line-height: 1.5vw;text-align: center;">An ASP.NET Core MVC Web App,</p>
-				<p  style="font-family:'RalewayRegular';font-weight:bold;color:rgba(0, 255, 255, 1);width: 100%;font-size:1.7vw;line-height: 1.5vw;text-align: center;">that I created as a place to upload my photos to.</p>
-			
-			</div>
-			
-			
-			
+		<div class="col-lg-6 px-3 py-1 my-1 my-lg-3 py-lg-1 px-lg-3 text-center bg-black text-white">
+			<p class="lead mb-0" style="font-family:'RalewayRegular';font-weight: 900;font-style: Black;font-size:65px;color:rgba(255, 255, 255, 1)">
+				5.1+ Million Total Visits
+			</p>
+			<p class="lead mb-2" style="font-family:'RalewayRegular';font-weight: 900;font-style: Black;font-size:35px;color:rgba(255, 255, 255, 1)">
+				With 1.26 Million Visits in December 2024
+			</p>
+			<p class="lead mb-2" style="font-family:'RalewayRegular';font-weight: 900;font-style: Black;font-size:25px;color:rgba(255, 255, 255, 1)">
+				Thank you for visiting my websites.
+			</p>
 			
 			
 			
 		</div>
 		
-		
-		
-		<div class="row">
-		
-			<div class="column2">
-				
-				<a href="https://trains.ethanstockton.com">
+	</div>
+  
+	
+	<div id="Photos"></div>
+	
+	<div class="featurette-divider container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-0 mb-0 border-bottom border-white opacity-25 border-3"></div>
 
-					<div class="imageContainer">
-						<img src="images/ui3.png" style="width:100%" alt="">
-						<div class="center4" style="width:93%;font-size:1.8vw;">Ethans Train Game Website</div>
-					</div>
-					
-				</a>
 
-			</div>
+	<div class="b-example-divider"></div>
+	
+	<!--<div class="b-example-divider"></div>-->
+	
+	
+	
+	
+	
+	
+
+	<div class="row text-end mb-0 mb-lg-0 py-0">
+		<div class="col-lg-6 px-0 py-1 my-0 my-xl-3 py-xl-5 px-lg-1 text-center text-white">
+			<p class="lead mb-1" style="font-family:'Runtoe';font-weight: 500;font-size:42px;color:rgba(255, 255, 255, 1)">
+			Ethan's Photo Gallery
+			</p>
 			
-			<div class="column2">
-
-				<a href="https://photos.ethanstockton.com">
-
-					<div class="imageContainer">
-						<img src="images/ui3.png" style="width:100%" alt="">
-						<div class="center4" style="width:93%;font-size:1.8vw;">Ethans Photo Gallery</div>
-					</div>
-					
-				</a>
-
-			</div>
-				
+			<p class="lead mb-1 px-1 px-lg-5 py-1 my-2 my-lg-2 py-lg-2" style="font-family:'RalewayRegular';font-weight: 400;font-size:25px;color:rgba(255, 255, 255, 1)">
+			This is my photos website where I upload the best of my photography.
+			</p>
+			<p class="lead mb-1 px-1 px-lg-5 py-1 my-2 my-lg-2 py-lg-2" style="font-family:'RalewayRegular';font-weight: 400;font-size:25px;color:rgba(255, 255, 255, 1)">
+			I have a variety of photos to look at, from lakes to trees, trains to castles, I am sure that there will be photos that you will find interesting to view. 
+			</p>
+			
+			<a href="https://photos.ethanstockton.com/" class="border border-white border-3 rounded lead mb-5 px-1 px-lg-5 py-1 my-2 my-lg-2 py-lg-2 btn btn-block btn-custom"
+					style="font-family:'Runtoe';font-size:30px;">
+					Visit the Photo Gallery
+			</a>
+			
+			
 		</div>
 		
-		<!--
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		-->
-		<!--
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		-->
-		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 0);text-align:center;width:100%;font-size:3vw;line-height:0.7em;">
-			<u>
-				 empty space
-			</u>
+		<div class="col-lg-6 px-0 py-1 my-0 my-lg-2 py-lg-1 px-lg-2 text-center text-white">
+			<div class="px-1  my-lg-1  px-lg-1  mx-3 mx-xl-5">
+		
+			<div id="myCarousel" class="carousel slide mb-1" data-bs-ride="carousel">
+			
+				<div class="carousel-indicators">
+				  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active"  aria-current="true"></button>
+				  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+				  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+				  
+				  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4" class=""></button>
+				  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5" class=""></button>
+				  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6" class=""></button>
+				  
+				  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7" class=""></button>
+				  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7" aria-label="Slide 8" class=""></button>
+				  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="8" aria-label="Slide 9" class=""></button>
+				  
+				  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="9" aria-label="Slide 10" class=""></button>
+				  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="10" aria-label="Slide 11" class=""></button>
+				  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="11" aria-label="Slide 12" class=""></button>
+				  
+				  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="12" aria-label="Slide 13" class=""></button>
+				  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="13" aria-label="Slide 14" class=""></button>
+				  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="14" aria-label="Slide 15" class=""></button>
+				  
+				  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="15" aria-label="Slide 16" class=""></button>
+				  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="16" aria-label="Slide 17" class=""></button>
+				 
+				</div>
+				<div class="carousel-inner border border-white border-3 rounded">
+				  <div class="carousel-item active">
+					<img class="img-fluid" src="https://photo1cdnuk.ethanstockton.com/HP/IMG_20240830_123511224_HDR.jpg">
+				  </div>
+				  
+				  
+				 
+				  
+				  
+				  <div class="carousel-item">
+					<img class="img-fluid" src="https://photo1cdnuk.ethanstockton.com/HP/IMG_20240830_155922131.jpg">
+				  </div>
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="https://photo1cdnuk.ethanstockton.com/HP/IMG_20240829_120320152.jpg">
+				  </div>
+				  
+					<div class="carousel-item ">
+					<img class="img-fluid" src="images/photos/IMG_20221007_135914960_4.jpg">
+				  </div>
+				  
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="https://photo1cdnuk.ethanstockton.com/HP/IMG_20230721_145515325.jpg">
+				  </div>	  
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="https://photo1cdnuk.ethanstockton.com/HP/IMG_20230720_111251366.jpg">
+				  </div>
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="https://photo1cdnuk.ethanstockton.com/HP/IMG_20240829_120611692_HDR.jpg">
+				  </div>
+				  
+				   
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="images/photos/IMG_20221025_140207561_4.jpg">
+				  </div>
+				  
+				  
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="https://photo1cdnuk.ethanstockton.com/HP/IMG_20240830_150142363.jpg">
+				  </div>
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="https://photo1cdnuk.ethanstockton.com/HP/IMG_20240830_152323090_HDR.jpg">
+				  </div>
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="https://photo1cdnuk.ethanstockton.com/HP/IMG_20230719_102228191.jpg">
+				  </div>
+				  
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="https://photo1cdnuk.ethanstockton.com/HP/IMG_20240830_123101822.jpg">
+				  </div>
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="https://photo1cdnuk.ethanstockton.com/HP/IMG_20230904_160559447.jpg">
+				  </div>
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="https://photo1cdnuk.ethanstockton.com/HP/IMG_20240809_165256874.jpg">
+				  </div>
+				  
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="https://photo1cdnuk.ethanstockton.com/HP/IMG_20240830_152036815_HDR.jpg">
+				  </div>
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="https://photo1cdnuk.ethanstockton.com/HP/IMG_20240830_154637084.jpg">
+				  </div>
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="https://photo1cdnuk.ethanstockton.com/HP/IMG_20240809_162914315_HDR.jpg">
+				  </div>
+				  
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			  </div>
+			</div>
+		</div>
+
+		
+		
+	</div>
+		  
+
+
+	<div class="b-example-divider"></div>
+	
+	<div class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-0 mb-0 border-bottom border-white opacity-25 border-3"></div>
+
+	<div id="Games"></div>
+	
+	<div class="b-example-divider"></div>
+	
+	
+	
+	
+	<div id="header"  style="box-sizing: border-box;text-align: center;top: 0;" class="mx-2 px-0 py-0 my-0">
+	
+		<p class="lead mb-1" style="font-family:'Runtoe';font-weight: 500;font-size:80px;color:rgba(255, 255, 255, 1)">
+			Games
 		</p>
-		
-</p>
 
+	</div>
+	
+
+	<div class="b-example-divider"></div>
+	
+	<div class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-0 mb-0 border-bottom border-white opacity-25 border-3"></div>
+
+	<div class="b-example-divider"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="row text-end mb-0 mb-lg-0 py-0">
+	
+	  
+	  <div class="col-xl-6 px-0 py-1 py-xl-3 px-lg-1 text-center text-white order-xl-2">
+			<p class="lead mb-1" style="font-family:'Runtoe';font-weight: 500;font-size:45px;color:rgba(255, 255, 255, 1)">
+			Ethan's Racing Game
+			</p>
+			
+			<p class="lead mb-1 px-1 px-lg-5 py-1 my-2 my-lg-2 py-lg-2" style="font-family:'RalewayRegular';font-weight: 400;font-size:25px;color:rgba(255, 255, 255, 1)">
+			Ethan's racing game is a Single Player Game with AI Opponents and a MultiPlayer Game with Online Servers.
+			</p>
+			<p class="lead mb-1 px-1 px-lg-5 py-1 my-2 my-lg-2 py-lg-2" style="font-family:'RalewayRegular';font-weight: 400;font-size:25px;color:rgba(255, 255, 255, 1)">
+			Development started in 2018. The game currently only has a single test track which is used for both single and multiplayer game modes.
+			</p>
+			
+			<a href="https://ethanstudios.net/" class="border border-white border-3 rounded lead mb-2 px-1 px-lg-5 py-2 my-1 my-lg-2 py-lg-2 btn btn-block btn-custom"
+					style="font-family:'Runtoe';font-size:27px;">
+					Visit the Ethan's Racing Game website
+			</a>
+			
+			<a href="http://game.ethanstockton.net/" class="border border-white border-3 rounded lead mb-2 px-1 px-lg-5 py-2 my-1 my-lg-2 py-lg-2 btn btn-block btn-custom"
+					style="font-family:'Runtoe';font-size:27px;">
+					Play the website version of the game
+			</a>
+			
+			<a href="https://play.google.com/store/apps/details?id=com.ethanstudios.ethanracinggame" class="border border-white border-3 rounded lead mb-2 px-1 px-lg-5 py-2 my-1 my-lg-2 py-lg-2 btn btn-block btn-custom"
+					style="font-family:'Runtoe';font-size:27px;">
+					Get the game on the google play store
+			</a>
+			
+			
+			
+			
+		</div>
+		
+		<!--
+		<div class="col-lg-6 px-0 py-1 my-0 my-lg-2 py-lg-1 px-lg-1 text-center text-white order-lg-1">
+			<div class="px-1  my-lg-1  px-lg-1  mx-1 mx-xl-3">
+		
+			
+						<img class="img-fluid border border-white border-3 rounded" src="images/erg1.png" alt="An image of my racing game, with cars moving towards the camera">
+			</div>
+		</div>
+
+	  <div class="col-lg-6 px-0 py-1 my-0 my-lg-2 py-lg-1 px-lg-1 text-center text-white order-lg-3">
+			<div class="px-1  my-lg-1  px-lg-1  mx-1 mx-xl-3">
+		
+			
+						<img class="img-fluid border border-white border-3 rounded" src="images/erg2.png" alt="An image of my racing game, with cars moving towards the camera">
+			</div>
+		</div>
+		
+	  <div class="col-lg-6 px-0 py-1 my-0 my-lg-2 py-lg-1 px-lg-1 text-center text-white order-lg-4">
+			<div class="px-1  my-lg-1  px-lg-1  mx-1 mx-xl-3">
+		
+			
+						<img class="img-fluid border border-white border-3 rounded" src="images/erg3.png" alt="An image of my racing game, with cars moving towards the camera">
+			</div>
+		</div>
+		-->
+		
+		
+		
+		
+		
+		<div class="col-xl-6 px-0 py-1 my-0 my-xl-4 py-xl-5 px-lg-1 text-center text-white order-xl-1">
+			<div class="px-1  my-lg-1  px-lg-1  mx-1 mx-xl-2">
+		
+			<div id="myCarouselERG" class="carousel slide mb-1" data-bs-ride="carousel">
+			
+				<div class="carousel-indicators">
+				  <button type="button" data-bs-target="#myCarouselERG" data-bs-slide-to="0" aria-label="Slide 1" class="active"  aria-current="true"></button>
+				  <button type="button" data-bs-target="#myCarouselERG" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+				  <button type="button" data-bs-target="#myCarouselERG" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+
+				</div>
+				<div class="carousel-inner border border-white border-3 rounded">
+				  <div class="carousel-item active">
+					<img class="img-fluid" src="images/erg4.png" alt="An image of my racing game, with cars moving towards the camera">
+				  </div>
+				  <div class="carousel-item">
+					<img class="img-fluid" src="images/erg2.png" alt="An image of my racing game, of the racing circuit">
+				  </div>
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="images/erg3.png" alt="An image of my racing game">
+				  </div>
+
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#myCarouselERG" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#myCarouselERG" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			  </div>
+			</div>
+		</div>
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    </div>
+	
+	
+	
+	
+	
+	<div class="b-example-divider"></div>
+	
+	<div class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-0 mb-0 border-bottom border-white opacity-25 border-3"></div>
+
+	<div class="b-example-divider"></div>
+	
+	
+	
+	
+	
+	
+	<div class="row text-end mb-0 mb-lg-0 py-0">
+	
+	  
+	  <div class="col-xl-6 px-0 py-1 py-xl-3 px-lg-1 text-center text-white order-xl-1">
+			<p class="lead mb-1" style="font-family:'Runtoe';font-weight: 500;font-size:45px;color:rgba(255, 255, 255, 1)">
+			Ethan's Tank Game
+			</p>
+			
+			<p class="lead mb-1 px-1 px-lg-5 py-1 my-2 my-lg-2 py-lg-2" style="font-family:'RalewayRegular';font-weight: 400;font-size:25px;color:rgba(255, 255, 255, 1)">
+			Ethan's Tank Game is a MultiPlayer tank game with 80's synthwave/retrowave styling, with a large collection of interesting maps and gamemodes to explore and play.
+			</p>
+			<p class="lead mb-1 px-1 px-lg-5 py-1 my-2 my-lg-2 py-lg-2" style="font-family:'RalewayRegular';font-weight: 400;font-size:25px;color:rgba(255, 255, 255, 1)">
+			Development started in 2020. 
+			</p>
+			
+			<a href="https://tanks.ethanstockton.com/" class="border border-white border-3 rounded lead mb-2 px-1 px-lg-5 py-2 my-1 my-lg-2 py-lg-2 btn btn-block btn-custom"
+					style="font-family:'Runtoe';font-size:27px;">
+					Visit the Ethan's Tank Game website
+			</a>
+			
+			<!--<a href="http://tankgame.ethanstockton.net/" class="border border-white border-3 rounded lead mb-2 px-1 px-lg-5 py-2 my-1 my-lg-2 py-lg-2 btn btn-block btn-custom"
+					style="font-family:'Runtoe';font-size:27px;">
+					Play the game
+			</a>-->
+		</div>
+		
+		
+		<div class="col-xl-6 px-0 py-1 my-0 my-lg-2 py-lg-1 px-lg-1 text-center text-white order-xl-2">
+			<div class="px-1  my-lg-1  px-lg-1  mx-1 mx-xl-3">
+		
+			<div hidden="" id="sprite-plyr"><!--?xml version="1.0" encoding="UTF-8"?--><svg>
+						<symbol id="plyr-airplay" viewBox="0 0 18 18">
+							<path
+								d="M16 1H2a1 1 0 00-1 1v10a1 1 0 001 1h3v-2H3V3h12v8h-2v2h3a1 1 0 001-1V2a1 1 0 00-1-1z">
+							</path>
+							<path d="M4 17h10l-5-6z"></path>
+						</symbol>
+						<symbol id="plyr-captions-off" viewBox="0 0 18 18">
+							<path
+								d="M1 1c-.6 0-1 .4-1 1v11c0 .6.4 1 1 1h4.6l2.7 2.7c.2.2.4.3.7.3.3 0 .5-.1.7-.3l2.7-2.7H17c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1H1zm4.52 10.15c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41C8.47 4.96 7.46 3.76 5.5 3.76c-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69zm7.57 0c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41c-.28-1.15-1.29-2.35-3.25-2.35-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69z"
+								fill-rule="evenodd" fill-opacity=".5">
+							</path>
+						</symbol>
+						<symbol id="plyr-captions-on" viewBox="0 0 18 18">
+							<path
+								d="M1 1c-.6 0-1 .4-1 1v11c0 .6.4 1 1 1h4.6l2.7 2.7c.2.2.4.3.7.3.3 0 .5-.1.7-.3l2.7-2.7H17c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1H1zm4.52 10.15c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41C8.47 4.96 7.46 3.76 5.5 3.76c-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69zm7.57 0c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41c-.28-1.15-1.29-2.35-3.25-2.35-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69z"
+								fill-rule="evenodd">
+							</path>
+						</symbol>
+						<symbol id="plyr-download" viewBox="0 0 18 18">
+							<path
+								d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z">
+							</path>
+						</symbol>
+						<symbol id="plyr-enter-fullscreen" viewBox="0 0 18 18">
+							<path d="M10 3h3.6l-4 4L11 8.4l4-4V8h2V1h-7zM7 9.6l-4 4V10H1v7h7v-2H4.4l4-4z">
+							</path>
+						</symbol>
+						<symbol id="plyr-exit-fullscreen" viewBox="0 0 18 18">
+							<path d="M1 12h3.6l-4 4L2 17.4l4-4V17h2v-7H1zM16 .6l-4 4V1h-2v7h7V6h-3.6l4-4z">
+							</path>
+						</symbol>
+						<symbol id="plyr-fast-forward" viewBox="0 0 18 18">
+							<path d="M7.875 7.171L0 1v16l7.875-6.171V17L18 9 7.875 1z"></path>
+						</symbol>
+						<symbol id="plyr-logo-vimeo" viewBox="0 0 18 18">
+							<path
+								d="M17 5.3c-.1 1.6-1.2 3.7-3.3 6.4-2.2 2.8-4 4.2-5.5 4.2-.9 0-1.7-.9-2.4-2.6C5 10.9 4.4 6 3 6c-.1 0-.5.3-1.2.8l-.8-1c.8-.7 3.5-3.4 4.7-3.5 1.2-.1 2 .7 2.3 2.5.3 2 .8 6.1 1.8 6.1.9 0 2.5-3.4 2.6-4 .1-.9-.3-1.9-2.3-1.1.8-2.6 2.3-3.8 4.5-3.8 1.7.1 2.5 1.2 2.4 3.3z">
+							</path>
+						</symbol>
+						<symbol id="plyr-logo-youtube" viewBox="0 0 18 18">
+							<path
+								d="M16.8 5.8c-.2-1.3-.8-2.2-2.2-2.4C12.4 3 9 3 9 3s-3.4 0-5.6.4C2 3.6 1.3 4.5 1.2 5.8 1 7.1 1 9 1 9s0 1.9.2 3.2c.2 1.3.8 2.2 2.2 2.4C5.6 15 9 15 9 15s3.4 0 5.6-.4c1.4-.3 2-1.1 2.2-2.4.2-1.3.2-3.2.2-3.2s0-1.9-.2-3.2zM7 12V6l5 3-5 3z">
+							</path>
+						</symbol>
+						<symbol id="plyr-muted" viewBox="0 0 18 18">
+							<path
+								d="M12.4 12.5l2.1-2.1 2.1 2.1 1.4-1.4L15.9 9 18 6.9l-1.4-1.4-2.1 2.1-2.1-2.1L11 6.9 13.1 9 11 11.1zM3.786 6.008H.714C.286 6.008 0 6.31 0 6.76v4.512c0 .452.286.752.714.752h3.072l4.071 3.858c.5.3 1.143 0 1.143-.602V2.752c0-.601-.643-.977-1.143-.601L3.786 6.008z">
+							</path>
+						</symbol>
+						<symbol id="plyr-pause" viewBox="0 0 18 18">
+							<path
+								d="M6 1H3c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h3c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1zm6 0c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h3c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1h-3z">
+							</path>
+						</symbol>
+						<symbol id="plyr-pip" viewBox="0 0 18 18">
+							<path d="M13.293 3.293L7.022 9.564l1.414 1.414 6.271-6.271L17 7V1h-6z"></path>
+							<path d="M13 15H3V5h5V3H2a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1v-6h-2v5z"></path>
+						</symbol>
+						<symbol id="plyr-play" viewBox="0 0 18 18">
+							<path
+								d="M15.562 8.1L3.87.225c-.818-.562-1.87 0-1.87.9v15.75c0 .9 1.052 1.462 1.87.9L15.563 9.9c.584-.45.584-1.35 0-1.8z">
+							</path>
+						</symbol>
+						<symbol id="plyr-restart" viewBox="0 0 18 18">
+							<path
+								d="M9.7 1.2l.7 6.4 2.1-2.1c1.9 1.9 1.9 5.1 0 7-.9 1-2.2 1.5-3.5 1.5-1.3 0-2.6-.5-3.5-1.5-1.9-1.9-1.9-5.1 0-7 .6-.6 1.4-1.1 2.3-1.3l-.6-1.9C6 2.6 4.9 3.2 4 4.1 1.3 6.8 1.3 11.2 4 14c1.3 1.3 3.1 2 4.9 2 1.9 0 3.6-.7 4.9-2 2.7-2.7 2.7-7.1 0-9.9L16 1.9l-6.3-.7z">
+							</path>
+						</symbol>
+						<symbol id="plyr-rewind" viewBox="0 0 18 18">
+							<path d="M10.125 1L0 9l10.125 8v-6.171L18 17V1l-7.875 6.171z"></path>
+						</symbol>
+						<symbol id="plyr-settings" viewBox="0 0 18 18">
+							<path
+								d="M16.135 7.784a2 2 0 01-1.23-2.969c.322-.536.225-.998-.094-1.316l-.31-.31c-.318-.318-.78-.415-1.316-.094a2 2 0 01-2.969-1.23C10.065 1.258 9.669 1 9.219 1h-.438c-.45 0-.845.258-.997.865a2 2 0 01-2.969 1.23c-.536-.322-.999-.225-1.317.093l-.31.31c-.318.318-.415.781-.093 1.317a2 2 0 01-1.23 2.969C1.26 7.935 1 8.33 1 8.781v.438c0 .45.258.845.865.997a2 2 0 011.23 2.969c-.322.536-.225.998.094 1.316l.31.31c.319.319.782.415 1.316.094a2 2 0 012.969 1.23c.151.607.547.865.997.865h.438c.45 0 .845-.258.997-.865a2 2 0 012.969-1.23c.535.321.997.225 1.316-.094l.31-.31c.318-.318.415-.781.094-1.316a2 2 0 011.23-2.969c.607-.151.865-.547.865-.997v-.438c0-.451-.26-.846-.865-.997zM9 12a3 3 0 110-6 3 3 0 010 6z">
+							</path>
+						</symbol>
+						<symbol id="plyr-volume" viewBox="0 0 18 18">
+							<path
+								d="M15.6 3.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4C15.4 5.9 16 7.4 16 9c0 1.6-.6 3.1-1.8 4.3-.4.4-.4 1 0 1.4.2.2.5.3.7.3.3 0 .5-.1.7-.3C17.1 13.2 18 11.2 18 9s-.9-4.2-2.4-5.7z">
+							</path>
+							<path
+								d="M11.282 5.282a.909.909 0 000 1.316c.735.735.995 1.458.995 2.402 0 .936-.425 1.917-.995 2.487a.909.909 0 000 1.316c.145.145.636.262 1.018.156a.725.725 0 00.298-.156C13.773 11.733 14.13 10.16 14.13 9c0-.17-.002-.34-.011-.51-.053-.992-.319-2.005-1.522-3.208a.909.909 0 00-1.316 0zm-7.496.726H.714C.286 6.008 0 6.31 0 6.76v4.512c0 .452.286.752.714.752h3.072l4.071 3.858c.5.3 1.143 0 1.143-.602V2.752c0-.601-.643-.977-1.143-.601L3.786 6.008z">
+							</path>
+						</symbol>
+					</svg>
+				</div>
+
+
+				<div class="img-fluid border border-white border-3 rounded">
+
+
+					<video poster="images/ui3/skid4.png" id="player" playsinline="true" controls clickToPlay="true"
+						data-poster="images/ui3/skid4.png" style="width:100%;--plyr-color-main: #00cccc;">
+						<source src="https://cdnuk1.ethanstockton.com/TankTrailer5HD-1080p.mp4" type="video/mp4"
+							size="1080">
+					</video>
+
+				</div>
+						
+			</div>
+		</div>
+
+		
+		
+		
+		
+		
+	  <div class="col-xl-6 px-0 py-1 my-0 my-lg-1 py-lg-1 px-lg-1 text-center text-white order-xl-4">
+			<div class="px-1  my-lg-1  px-lg-1  mx-1 mx-xl-3">
+		
+			
+			<p class="lead mb-1 px-1 px-lg-5 py-1 my-2 my-lg-2 py-lg-2" style="font-family:'RalewayRegular';font-weight: 400;font-size:30px;color:rgba(255, 255, 255, 1)">
+			5 Game Modes
+			</p>
+			<p class="lead mb-1 px-1 px-lg-5 py-1 my-2 my-lg-2 py-lg-2" style="font-family:'RalewayRegular';font-weight: 400;font-size:25px;color:rgba(255, 255, 255, 1)">
+			Free For All, Capture The Flag, Capture The Power, Team Death Match, Respawn Wars. 
+			</p>
+			
+			<p class="lead mb-1 px-1 px-lg-5 py-1 my-2 my-lg-2 py-lg-2" style="font-family:'RalewayRegular';font-weight: 400;font-size:30px;color:rgba(255, 255, 255, 1)">
+			5 Game Maps
+			</p>
+			<p class="lead mb-1 px-1 px-lg-5 py-1 my-2 my-lg-2 py-lg-2" style="font-family:'RalewayRegular';font-weight: 400;font-size:25px;color:rgba(255, 255, 255, 1)">
+			Castle Ruins, Fortress Of Destruction, Castles Of Horror, Tunnel Madness, Mansion Mayhem. 
+			</p>
+			
+			</div>
+		</div>
+		
+	 
+		
+		
+		
+		
+		
+		<div class="col-xl-6 px-0 py-1 my-0 my-xl-1 py-xl-1 px-lg-1 text-center text-white order-xl-3">
+			<div class="px-1  my-lg-1  px-lg-1  mx-1 mx-xl-2">
+		
+			<div id="myCarouselETG" class="carousel slide mb-1" data-bs-ride="carousel">
+			
+				<div class="carousel-indicators">
+				  <button type="button" data-bs-target="#myCarouselETG" data-bs-slide-to="0" aria-label="Slide 1" class="active"  aria-current="true"></button>
+				  <button type="button" data-bs-target="#myCarouselETG" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+				  <button type="button" data-bs-target="#myCarouselETG" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+				  
+				  <button type="button" data-bs-target="#myCarouselETG" data-bs-slide-to="3" aria-label="Slide 4" class=""></button>
+				  <button type="button" data-bs-target="#myCarouselETG" data-bs-slide-to="4" aria-label="Slide 5" class=""></button>
+				  <button type="button" data-bs-target="#myCarouselETG" data-bs-slide-to="5" aria-label="Slide 6" class=""></button>
+				  
+				  <button type="button" data-bs-target="#myCarouselETG" data-bs-slide-to="6" aria-label="Slide 7" class=""></button>
+				  <button type="button" data-bs-target="#myCarouselETG" data-bs-slide-to="7" aria-label="Slide 8" class=""></button>
+				  <button type="button" data-bs-target="#myCarouselETG" data-bs-slide-to="8" aria-label="Slide 9" class=""></button>
+				  
+				  <button type="button" data-bs-target="#myCarouselETG" data-bs-slide-to="9" aria-label="Slide 10" class=""></button>
+				  <button type="button" data-bs-target="#myCarouselETG" data-bs-slide-to="10" aria-label="Slide 11" class=""></button>
+				  
+				</div>
+				<div class="carousel-inner border border-white border-3 rounded">
+				  <div class="carousel-item active">
+					<img class="img-fluid" src="images/tanks/title screen unedited.png" alt="">
+				  </div>
+				  <div class="carousel-item">
+					<img class="img-fluid" src="images/tanks/skid1.png" alt="">
+				  </div>
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="images/tanks/fortress of destruction.png" alt="">
+				  </div>
+				  
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="images/tanks/free.png" alt="">
+				  </div>
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="images/tanks/castles of horror.png" alt="">
+				  </div>
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="images/tanks/ctf.png" alt="">
+				  </div>
+				  
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="images/tanks/mansion mayhem.png" alt="">
+				  </div>
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="images/tanks/rw.png" alt="">
+				  </div>
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="images/tanks/tunnel madness.png" alt="">
+				  </div>
+				  
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="images/tanks/ctp.png" alt="">
+				  </div>
+				  <div class="carousel-item ">
+					<img class="img-fluid" src="images/tanks/tdm.png" alt="">
+				  </div>
+
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#myCarouselETG" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#myCarouselETG" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			  </div>
+			</div>
+		</div>
+
+		
+    </div>
+	
+	
+	
+	
+	
+	<div class="b-example-divider"></div>
+	
+	<div class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-0 mb-0 border-bottom border-white opacity-25 border-3"></div>
+
+	<div class="b-example-divider"></div>
+	
+	
+	
+	
+	
+	
+	<div class="row text-end mb-0 mb-lg-0 py-0">
+	
+	  
+	  <div class="col-xl-6 px-0 py-1 py-xl-3 px-lg-1 text-center text-white order-xl-2">
+			<p class="lead mb-1" style="font-family:'Runtoe';font-weight: 500;font-size:45px;color:rgba(255, 255, 255, 1)">
+			Ethan's Train Game
+			</p>
+			
+			<p class="lead mb-1 px-1 px-lg-5 py-1 my-2 my-lg-2 py-lg-2" style="font-family:'RalewayRegular';font-weight: 400;font-size:25px;color:rgba(255, 255, 255, 1)">
+			Prototype Demo now available to play.
+			</p>
+			<p class="lead mb-1 px-1 px-lg-5 py-1 my-2 my-lg-2 py-lg-2" style="font-family:'RalewayRegular';font-weight: 400;font-size:25px;color:rgba(255, 255, 255, 1)">
+			Development started in 2023. 
+			</p>
+			
+			<a href="https://trains.ethanstockton.com" class="border border-white border-3 rounded lead mb-2 px-1 px-lg-5 py-2 my-1 my-lg-2 py-lg-2 btn btn-block btn-custom"
+					style="font-family:'Runtoe';font-size:27px;">
+					Visit the Ethan's Train Game website
+			</a>
+			<!--<a href="https://traingame.ethanstockton.com/" class="border border-white border-3 rounded lead mb-2 px-1 px-lg-5 py-2 my-1 my-lg-2 py-lg-2 btn btn-block btn-custom"
+					style="font-family:'Runtoe';font-size:27px;">
+					Play the prototype game
+			</a>-->
+			
+		</div>
+		
+		
+		
+	 
+		
+		<div class="col-xl-6 px-0 py-1 my-0 my-xl-1 py-xl-1 px-lg-1 text-center text-white order-xl-1">
+			<div class="px-1  my-lg-1  px-lg-1  mx-1 mx-xl-3">
+		
+			
+					<img class="img-fluid border border-white border-3 rounded" src="images/TrainGameTestValleyStill-Green2.png" alt="">
+				 
+			</div>
+		</div>
+
+		
+		
+		
+		
+    </div>
 
 	
-		<div class="row">
-			<div class="column0">
-				<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center;width:100%;font-size:1.5vw;line-height:0.1vw;">
-					<u>
-						Links To My Profiles On Other Websites
-					</u>
-				</p>
-			</div>
-		</div>
-		<!--
-			<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 0);text-align:center;width:100%;font-size:1vw;line-height:0.1em;">
-				<u>
-					 empty space
-				</u>
-			</p>
-			-->
-		<div class="row">
-			<div class="column0">
-				<a href="https://www.linkedin.com/in/ethanstockton/">
-			
-					<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center;width:100%;font-size:1vw;line-height:0.1vw;">LinkedIn: https://www.linkedin.com/in/ethanstockton/</p>
-			
-				</a>
-			</div>
-		</div>
-				<!--			
-		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 0);text-align:center;width:100%;font-size:1vw;line-height:0.1em;">
-			<u>
-				empty space
-			</u>
-		</p>
-		-->
-		<div class="row">
-			<div class="column0">
-				<a href="https://www.instagram.com/ethanstocktondev/">
-			
-					<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center;width:100%;font-size:1vw;line-height:0.1vw;">Instagram: https://www.instagram.com/ethanstocktondev/</p>
-			
-				</a>
-			</div>
-		</div>
-		  
-		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 0);text-align:center;width:100%;font-size:1vw;line-height:0.1em;">
-			<u>
-				 empty space
-			</u>
-		</p>
-	  
+	
+	<div class="b-example-divider"></div>
+	
+	<div class="b-example-divider"></div>
+	
+	
+	
 
-		<p style="font-family:'acostaregular';color:rgba(0, 255, 255, 1);text-align:center;width:100%;font-size:1vw;line-height:0.2em;white-space: nowrap;">All Rights Reserved (c) Ethan Stockton 2017 - 2024</p>
+		
+		<div>
+  <footer class="  border-white  border-2 border-top text-white">
+    <div class="row py-2 my-2 bg-black flex-wrap">
+	  <div class="col-12 col-md-5 mb-5 my-2  py-1 py-md-1 my-0 my-md-1  px-1 px-xl-5 mx-0 mx-xl-5">
+        <img class="img-fluid" src="images/EthanStockton-Compressed-Medium.png">
+      </div>
+	  
+      <div class="col-4 col-md-2 mb-3 px-2">
+        <h5>External Links</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://www.linkedin.com/in/ethanstockton/" class="text-white link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover p-0 ">LinkedIn</a></li>
+          <li class="nav-item mb-2"><a href="https://www.instagram.com/ethanstocktondev/" class="text-white link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover p-0 ">Instagram</a></li>
+		
+        </ul>
+      </div>
+
+      <div class="col-4 col-md-2 mb-3 px-2">
+        <h5>Photos Pages</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://photos.ethanstockton.com/" class="text-white link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover p-0 ">Photos Home</a></li>
+          <li class="nav-item mb-2"><a href="https://photos.ethanstockton.com/Photos" class="text-white link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover p-0 ">Photos Search</a></li>
+          <li class="nav-item mb-2"><a href="https://photos.ethanstockton.com/Photos/MapSearch" class="text-white link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover p-0 ">Photos Map Search</a></li>
+        </ul>
+      </div>
+
+      <div class="col-4 col-md-2 mb-3 px-2">
+        <h5>Games</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://ethanstudios.net/" class="text-white link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover p-0 ">Ethan's Racing Game</a></li>
+          <li class="nav-item mb-2"><a href="https://tanks.ethanstockton.com/" class="text-white link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover p-0 ">Ethan's Tank Game</a></li>
+          <li class="nav-item mb-2"><a href="https://trains.ethanstockton.com/" class="text-white link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover p-0 ">Ethan's Train Game</a></li>
+        </ul>
+      </div>
 
       
+    </div>
 
+    <div class="py-2 my-2 border-top border-white border-2">
+      <p class="text-center" style="font-family:'RalewayRegular';font-weight: 300;font-size:20px;color:rgba(255, 255, 255, 1)">All Rights Reserved © Ethan Stockton 2017 - 2025</p>
+      
+    </div>
+  </footer>
 </div>
-    
-    <!--
-  THIS CODE IS PROPERTY OF ETHAN STOCKTON
-  -->
-
-<script>
-
-  const player = new Plyr('#player', {
-	controls: [
-  'play-large', // The large play button in the center
-  
-  'play', // Play/pause playback
-  
-  'progress', // The progress bar and scrubber for playback and buffering
-  'current-time', // The current time of playback
-  'duration', // The full duration of the media
-  'mute', // Toggle mute
-  'volume', // Volume control
-  
-  //'settings', // Settings menu
-  
-  'fullscreen', // Toggle fullscreen
-],
-
-loadSprite:false,
-volume:'0.5',
-
-resetOnEnd:true
-
-});
-
-
-if(window.location.protocol == 'http:') {
-			location.href =   location.href.replace("http://", "https://");
-		}
-
-/*
 		
-function getPlayerNumber(xhttp) {
-	let response = xhttp.response;
-	let VersionPlayerCount;
-	let VersionServerCount;
-	let GameVersion = "p592";
+		
 	
-	console.log(response);
+		
 
-                var lines = response.split(/\r?\n|\r|\n/g);
-               // var lines = response.match(/[^\r\n]+/g);
+		<script>
 
-				var currenttype = "";
-                
-				
-				
-				for (i = 0; i < lines.length; i++) {
-				
-				
-				
-					if (lines[i] == "###versions")
-                    {
-                        //set currenttype to ###versions
-                        currenttype = "versions";
-                        
+			const player = new Plyr('#player', {
+				controls: [
+					'play-large', // The large play button in the center
 
-                    }
-                    if (lines[i] == "###regions")
-                    {
-                        //set currenttype to ###regions
-                        currenttype = "regions";
+					'play', // Play/pause playback
 
-                    }
-                    if (lines[i] == "###gametype2s")
-                    {
-                        //set currenttype to ###gametype2s
-                        currenttype = "gametype2s";
-                    }
-                    if (lines[i] == "###gametypes")
-                    {
-                        //set currenttype to ###gametypes
-                        currenttype = "gametypes";
-                    }
-  
+					'progress', // The progress bar and scrubber for playback and buffering
+					'current-time', // The current time of playback
+					'duration', // The full duration of the media
+					'mute', // Toggle mute
+					'volume', // Volume control
 
-                    
-                    if (currenttype == "versions" && lines[i] != "###versions")
-                    {
-                        let LoadedLine = lines[i].split('');
+					//'settings', // Settings menu
 
-                        let version = "null";
-                        let num = 0;
-                        let players = 0;
+					'fullscreen', // Toggle fullscreen
+				],
 
-console.log(LoadedLine);
+				loadSprite: false,
+				volume: '0.5',
 
-                        let temp = "";
-                        let j = 0;
-                        let index = 0;
-                        for (y = 0; y < LoadedLine.length; y++) 
-                        {
-							let chara = LoadedLine[y];
-                            if (chara == ',')
-                            {
+				resetOnEnd: true
 
-                                if (j == 0)
-                                {
-                                    version = temp;
-									console.log(version);
-                                    temp = "";
-                                }
-                                if (j == 1)
-                                {
-                                    num = temp;
-									console.log(num);
-                                    temp = "";
-
-                                }
-                                if (j == 2)
-                                {//players
-                                    temp = temp + chara;
-                                    players = temp;
-									console.log(players);
-                                    temp = "";
-
-                                }
-                                else
-                                {
-                                    temp = "";
-
-                                }
-                                j++;
+			});
 
 
-                            }
-                            else
-                            {
-                                if (temp == null)
-                                {
-                                    temp = chara;
-                                }
-                                else
-                                {
-                                    temp = temp + chara;
-                                }
-
-                            }
-
-                            
-                        }
-						players = temp;
-						console.log(players);
-
-                        if (version == GameVersion)
-                        {
-                            //this is the entry related to this version, so pass the info to the variables
-                            VersionServerCount = num;
-                            VersionPlayerCount = players;
-							
-							document.getElementById("NumOfPlayers").innerHTML = VersionPlayerCount + " Players Online";
-                        }
-                    }
-					
-					
-				}
-				
-				
-				
-				if(VersionServerCount == null){
-				
-					document.getElementById("NumOfPlayers").innerHTML = "No Servers Online";
-				}
-				
-	}
-
-
-//document.getElementById("NumOfPlayers").innerHTML = "2 Players Online";
-
-
-loadDoc('https://listserver.ethanstudios.org/neon10-11-2022/autojoin/public/gameserverlistneonAJ.php', getPlayerNumber);
+			if (window.location.protocol == 'http:') {
+				location.href = location.href.replace("http://", "https://");
+			}
 
 
 
-function loadDoc(url, cFunction) {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {cFunction(this);}
-  xhttp.open("GET", url);
-  xhttp.send();
-}
-*/
+		</script>
 
+</body>
 
-
-</script>
-  </body>
-</html><!--
-  THIS CODE IS PROPERTY OF ETHAN STOCKTON
-  -->
+</html>
